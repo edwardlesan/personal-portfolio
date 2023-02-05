@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto+Mono:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio | el.</title>
+  </head>
+  <body>
+    <!-- #header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="nav-logo">el.</a>
+
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- #hero -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hi, I'm <span>Edward Lesan</span></h1>
+          <h3 class="hero-subtitle">i <span class="auto-type"></span> stuff</h3>
+          <a class="hero-button" href="#projects">See more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- #projects -->
+    <section id="projects">
+        <div class="container projects">
+            <div class="projects-left">
+              <h2 class="projects-left_title">
+                hey there.<br />i'm a software engineer.
+              </h2>
+              <h3 class="projects-left_subtitle">Find my work here :</h4>
+              <ul class="projects-left_list">
+                <li class="projects-left_link"><a href="https://github.com/edwardlesan" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li class="projects-left_link"><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li class="projects-left_link"><a href="https://twitter.com/edwardsendrea" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              </ul>
+            </div>
+            <div class="projects-right">
+              <h1 class="projects-right_title">Portfolio Projects</h1>
+              <div class="projects-right_list">
+                <div class="projects-right_item">
+                  <a href="https://live-digital-clock.netlify.app/" target="_blank"><img src="./images/LiveClock.jpg" alt="Project Nr.1"></a>
+                  <h4>Digital Live Clock</h4>
+                  <p>Getting used to JS</p>
+                </div>
+                <div class="projects-right_item">
+                  <a href="https://passwordgenerator-online.netlify.app/" target="_blank"><img src="./images/PasswordGenerator.jpg" alt="Project Nr.2"></a>
+                  <h4>Password Generator</h4>
+                  <p>Applied simple JS knowledge on practice</p>
+                </div>
+                <div class="projects-right_item">
+                  <a href="https://neo-gear-e-commerce.netlify.app/" target="_blank"><img src="./images/e-commerce.jpg" alt="Project Nr.3"></a>
+                  <h4>E-commerce Website</h4>
+                  <p>Built an e-commerce project based on prototypes</p>
+                </div>
+                <div class="projects-right_item">
+                  <a href="https://autoshop-car-project.netlify.app/" target="_blank"><img src="./images/car-project.jpg" alt="Project Nr.4"></a>
+                  <h4>Car Project</h4>
+                  <p>Sort cars by price and filter by mark</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- #about -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+
+                <div class="about-bio">
+                    <h4 class="about-title">Get to know more about me!</h4>
+                    <p class="bio-text">I'm a young and ambitious software developer, who is currently studying Automation & Information Engineering at the "Stefan cel Mare" University in Suceava, Romania. I focus on improving my coding skills, especially in the front-end area.</p>
+                    <p class="bio-text">I'm open to new opportunities, so if you are someone who is looking to hire a dedicated web developer then feel free to contact me.</p>
+                    <button onclick="location.href='Documents/CV.pdf';" class="bio-cv">CV</button>
+                </div>
+
+                <div class="about-skills">
+                    <h4 class="about-title">Professional Skills.</h4>
+                    <div class="skills-list">
+                        <span class="skills-item">HTML</span>
+                        <span class="skills-item">CSS</span>
+                        <span class="skills-item">JavaScript</span>
+                        <span class="skills-item">Python</span>
+                        <span class="skills-item">C/C++</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- #contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+
+          <div class="contact-left">
+            <form action="/">
+              <label for="name">Your Name</label><br>
+              <input type="text" id="name" name="name" required><br>
+              <label for="mail">Your E-mail</label><br>
+              <input type="email" id="mail" name="mail" required><br>
+              <label for="message">Your message</label><br>
+              <input type="text" id="message" name="message"><br>
+              <button class="contact-btn" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="contact-right">
+            <h2 class="contact-title">Get in touch.</h2>
+            <div class="contact-links">
+              <div class="contact-icons">
+                <ion-icon name="location-outline" class="contact-icon"></ion-icon>
+                <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <h4>Aleea Jupiter 8, Suceava, Romania</h4>
+                <h4>+40 748 648 851</h4>
+                <h4>edwardsendrea1@gmail.com</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- #footer -->
+    <footer class="footer">
+      
+        <div class="footer-content">
+          <div class="footer-social">
+            <a href="https://www.facebook.com/edwardlesan/" class="footer-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/eddie.lesan/" class="footer-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://vk.com/falcon1e" class="footer-link" target="_blank"><ion-icon name="logo-vk"></ion-icon></a>
+            <a href="#" class="footer-link" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+          <div class="line"></div>
+          <p class="footer-copyright">Copyright © 2022. All rights reserved</p>
+        </div>
+      
+    </footer>
+
+    <!-- #scripts -->
+    <script
+      src="https://kit.fontawesome.com/b2834479d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
